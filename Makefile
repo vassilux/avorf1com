@@ -1,8 +1,8 @@
-# Makefile for the vorimport project
+# Makefile for the avorf1com project
 # Helper file
  
 # Go parameters
-APPNAME=avorsmtp
+APPNAME=avorf1com
 GOCMD=go
 GOBUILD=$(GOCMD) build
 GOCLEAN=$(GOCMD) clean
@@ -33,12 +33,9 @@ test: $(TEST_LIST)
 fmt: $(FMT_TEST)
 git:
 	git commit -a -m "$m"
-	git push https://github.com/vassilux/vorimport.git
+	git push https://github.com/vassilux/avorf1com.git
 depends:
 	go get -u github.com/cihub/seelog
-	go get -u github.com/ziutek/mymysql/thrsafe
-	go get -u github.com/ziutek/mymysql/autorc
-	go get -u github.com/ziutek/mymysql/godrv
 	go get labix.org/v2/mgo
  
 $(BUILD_LIST): %_build: %_fmt

@@ -1,4 +1,5 @@
 { 
-	"address": "smtp.gmail.com",
-	"siteID": "avorf1com"
+	"address": ":3003",
+	"siteID": "AVORTEST",
+	"mongoHost": "127.0.0.1"
 }
