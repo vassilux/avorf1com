@@ -1,7 +1,7 @@
 #!/bin/bash
 #
 # 
-# Description : Prepare deploy avorsmtp. 
+# Description : Prepare deploy avorf1com. 
 # Author : vassilux
 # Last modified : 2014-10-10 14:53:54  
 #
@@ -12,8 +12,8 @@ VER_MAJOR="1"
 VER_MINOR="0"
 VER_PATCH="0"
 
-DEPLOY_DIR="avorsmtp_${VER_MAJOR}.${VER_MINOR}.${VER_PATCH}"
-DEPLOY_FILE_NAME="avorsmtp_${VER_MAJOR}.${VER_MINOR}.${VER_PATCH}.tar.gz"
+DEPLOY_DIR="avorf1com_${VER_MAJOR}.${VER_MINOR}.${VER_PATCH}"
+DEPLOY_FILE_NAME="avorf1com_${VER_MAJOR}.${VER_MINOR}.${VER_PATCH}.tar.gz"
 
 if [ -d "$DEPLOY_DIR" ]; then
     rm -rf  "$DEPLOY_DIR"
