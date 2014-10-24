@@ -14,7 +14,7 @@ do
  sleep 1
  echo "Random number $i"
  DATA="Data number $i"
- echo "db.events.save({'transport':'f1com','type':1, 'code': 'APPXXX', 'data':'${DATA}', 'appid': 'builkgenerator','asteriskid':'astersk1'})" | mongo notifications
+ echo "db.events.save({'transport':'f1com','type':1, 'code': 'NODSTA', 'data':'${DATA}', 'appid': 'builkgenerator','asteriskid':'astersk1'})" | mongo 192.168.3.20/notifications
  
 done
 
