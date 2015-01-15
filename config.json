@@ -1,5 +1,5 @@
 { 
 	"address": ":3003",
 	"siteID": "AVORTEST",
-	"mongoHost": "192.168.3.20"
+	"mongoHost": "192.168.1.26"
 }
