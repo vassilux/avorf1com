@@ -2,6 +2,7 @@ package main
 
 import (
 	"flag"
+	"fmt"
 	log "github.com/cihub/seelog"
 	"net"
 	"os"
@@ -10,10 +11,15 @@ import (
 	"time"
 )
 
+const (
+	VERSION = "1.0.1"
+)
+
 var (
 	f1comSrv *F1ComServer
 	config   *Config
 	fake     = flag.Bool("fake", false, "generate fake alarm") // flag to generate fake alarm
+	version  = flag.Bool("version", false, "show version")
 )
 
 func loadLogger() {
@@ -37,6 +43,12 @@ func init() {
 func main() {
 	//
 	flag.Parse()
+	//
+	if *version {
+		fmt.Printf("Version : %s\n", VERSION)
+		fmt.Println("Get fun! Live well !")
+		return
+	}
 
 	var err error
 	config, err = NewConfig()

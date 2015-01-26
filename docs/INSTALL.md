@@ -7,13 +7,15 @@ avorf1com
 Copier le ficheir avorf1com_[version].tar.gz sur la machine cible dans le repertoire /opt/avorf1com
 Exécuter tar xvzf avorf1com_[version].tar.gz
 
-Ce placer dans le repertoire : cd /opt/avorf1com/avorf1com_[version]
+Ce placer dans le repertoire : cd /opt/avorf1com/
 
 > **NOTE:**
 >
 > - En cas d'une nouvelle installation copier le ficheir avorf1com.supervisor.conf dans le répertoire /etc/supervisor/conf.d
 >
-> - Copier le fichier /opt/avorf1com/avorf1com_[version]/config.sample.json dans /opt/avorf1com/avorf1com_[version]/config.json
+> - Copier le fichier /opt/avorf1com/avorf1com_[version]/config.json dans /opt/avorf1com/avorf1com_[version]/config.json
+> - Addapter ce fichier en cas de besoin à votre environement cible
+> - Copier le fichier /opt/avorf1com/avorf1com_[version]/logger.xml dans /opt/avorf1com/avorf1com_[version]/logger.xml
 > - Addapter ce fichier en cas de besoin à votre environement cible
 
 
@@ -21,7 +23,7 @@ Vérifier si l'application est en cours d'execution via console de supervisor : 
 Si l'application est en court d'exécution arrêter l'application : stop avorf1com
 Quitter le console : exit
 
-Crée un lien symbolic ln -s /opt/revor/avorf1com_[version] /opt/avorf1com/current 
+Crée un lien symbolic ln -s /opt/avorf1com/avorf1com_[version] /opt/avorf1com/current 
 > **NOTE:**
 >
 > - En cas si le répertoire existe /opt/avorf1com/current. Supprimer rm -rf /opt/avorf1com/current
